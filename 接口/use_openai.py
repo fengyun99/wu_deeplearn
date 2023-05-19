@@ -12,7 +12,7 @@ from enum import Enum
 import os
 
 # 秘钥
-openai.api_key = "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"
+openai.api_key = ""
 
 
 # 传递的参数，主要是输入
