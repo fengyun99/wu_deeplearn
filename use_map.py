@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2023/5/19 09:55
 # @Author   : FengYun
-# @File     : test.py
+# @File     : 通过深度获取json对象结果.py
 # @Software : PyCharm
 print(list(map(lambda x: x.replace("a", "t"), "abc")))
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time     : 2023/4/20 09:57
 # @Author   : FengYun
-# @File     : test.py
+# @File     : 通过深度获取json对象结果.py
 # @Software : PyCharm
 # with open('data.txt', 'r', encoding='utf-8') as f:
 #     text = f.readline()
