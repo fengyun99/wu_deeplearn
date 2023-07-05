@@ -1,0 +1,14 @@
+default:
+  name: ming
+  age: 12
+  lesson:
+    - math
+    - english
+    - history
+  pet:
+    dog:
+      name: koko
+      age: 3
+    cat:
+      name: mimi
+      age: 1
