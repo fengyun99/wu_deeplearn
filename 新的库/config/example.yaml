@@ -12,3 +12,4 @@ default:
     cat:
       name: mimi
       age: 1
+choice: True

@@ -16,3 +16,9 @@ conf = OmegaConf.load('config/example.yaml')
 cfd = conf.default.lesson
 print(cfd)
 
+# 判断？
+if "lesson" in conf.default.keys():
+    print(1)
+else:
+    print(2)
+
