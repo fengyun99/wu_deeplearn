@@ -49,7 +49,7 @@ class Heatmap():
             colortype="rgb",
         )
         return intermediate_color
-    def create_heatmap(self, positions = None, font_path = './arial.ttf'):
+    def create_heatmap(self, positions = None, font_path = './arial.font'):
         if positions is None:
             positions = self.positions
         # check if there's no repeated rows in positions, which is the second column of the positions list
