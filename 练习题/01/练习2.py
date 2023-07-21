@@ -27,4 +27,4 @@ list_200 = []
 for _ in range(200):
     list_200.append(gen_code())
 
-print(len(list_200))
+print(list_200)
