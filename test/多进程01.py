@@ -4,8 +4,6 @@
 # @Author   : FengYun
 # @File     : 多进程01.py
 # @Software : PyCharm
-import multiprocessing
-
 '''
 使用多进程实现在队列中按每5个取值，然后再给多进程处理
 '''
