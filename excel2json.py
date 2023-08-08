@@ -7,11 +7,12 @@
 import pandas as pd
 import json
 
+
 # 将excel的问答文件转换为json模式
 class Excel2JSON:
     def __init__(self, in_filepath: str, out_filename: str):
-        self.in_filepath=in_filepath
-        self.out_filename=out_filename
+        self.in_filepath = in_filepath
+        self.out_filename = out_filename
 
     def to_json(self):
         # 读取excel文件

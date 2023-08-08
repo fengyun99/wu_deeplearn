@@ -30,8 +30,9 @@ for _ in range(200):
     list_200.append(gen_code())
 
 # 连接数据库
-with open("../config/sql.yaml", "r") as sql:
-    sql_data = yaml.load(sql,Loader=yaml.Loader)
+with open("../config/web_sql.yaml.encode", "rb") as sql:
+    sql_data = sql.read()
+
 url = f"mysql+pymysql://{sql_data['mysql']['username']}:{sql_data['mysql']['password']}@{sql_data['ip']}:3306/dbtest" \
       f"?charset=utf8"
 engine = create_engine(url, max_overflow=5)
