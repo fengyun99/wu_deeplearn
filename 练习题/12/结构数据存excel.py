@@ -21,16 +21,19 @@ def data_to_excel(excel_name, data):
     # 选择默认的工作表（第一个工作表）
     ws = wb.active
     temp = []
-    for k, v in data.items():
-        res = []
-        if isinstance(v, list):
-            res.append(k)
-            res.extend(v)
-            temp.append(res)
-        else:
-            res = [k, v]
-            temp.append(res)
-    print(temp)
+    if isinstance(data,dict):
+        for k, v in data.items():
+            res = []
+            if isinstance(v, list):
+                res.append(k)
+                res.extend(v)
+                temp.append(res)
+            else:
+                res = [k, v]
+                temp.append(res)
+    elif isinstance(data,list):
+        for i in data:
+            temp.append(i)
 
     length_data = len(temp[0])
     length_temp = len(temp)
@@ -54,3 +57,9 @@ if __name__ == '__main__':
         "3": "成都"
     }
     data_to_excel("city.xlsx", data02)
+    data03 = [
+        [1, 82, 65535],
+        [20, 90, 13],
+        [26, 809, 1024]
+    ]
+    data_to_excel("numbers.xlsx", data03)
