@@ -89,4 +89,4 @@ async def Talk(param: Param,start: int):
 
 
 if __name__ == '__main__':
-    uvicorn.run("use_openai:app", reload=True, port=9999)
+    uvicorn.run("use_openai:app", reload=True, port=7777)

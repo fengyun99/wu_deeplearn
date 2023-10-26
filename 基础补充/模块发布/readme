@@ -1,0 +1,4 @@
+这是一个模块发布的文件夹
+编写setup.py
+构建模块 python setup.py build
+生成发布压缩包 python setup.py sdist
