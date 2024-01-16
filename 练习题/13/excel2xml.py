@@ -6,7 +6,6 @@
 # @Software : PyCharm
 import openpyxl
 import xml.etree.ElementTree as ET
-import xml.dom.minidom as minidom
 
 
 def load_excel(excel_file_path, sheet_name):
